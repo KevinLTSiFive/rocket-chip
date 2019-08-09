@@ -4,17 +4,17 @@ def deps =
   apiConfigChipsallianceScalaModule,
   apiUtilChipsallianceScalaModule,
   apiDiplomacyChipsallianceScalaModule,
-  libraryTilelinkAdaptersChipsallianceScalaModule,
   libraryRegisterrouterChipsallianceScalaModule,
   libraryInterruptChipsallianceScalaModule,
+  libraryTilelinkAdaptersChipsallianceScalaModule,
   apiUtilUnittestChipsallianceScalaModule,
   rocketchipMacros,
   Nil
 
-global def libraryTilelinkAdaptersUnittestChipsallianceScalaModule =
+global def libraryTilelinkAdaptersTestChipsallianceScalaModule =
   def version = makeScalaVersion 12 8
   def root = here
-  def name = "library-tilelinkadaptersunittest-chipsalliance"
+  def name = "library-tilelinkadapterstest-chipsalliance"
   makeScalaModule name here version
   | setScalaModuleDeps deps
   | setScalaModuleScalacOptions ("-Xsource:2.11", Nil)
