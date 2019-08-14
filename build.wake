@@ -16,10 +16,6 @@ global def rocketchipScalaModule =
     hardfloatScalaModule,
     hardfloatScalaModule,
     apiConfigChipsallianceScalaModule,
-    apiUtilChipsallianceScalaModule,
-    apiDiplomacyChipsallianceScalaModule,
-    libraryTilelinkAdaptersChipsallianceScalaModule,
-    ##apiUnittestChipsallianceScalaModule,
     Nil
   makeScalaModuleFromJSON here "rocketchip"
   | setScalaModuleRootDir "rocket-chip"
