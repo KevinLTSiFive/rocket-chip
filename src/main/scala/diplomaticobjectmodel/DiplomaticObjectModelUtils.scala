@@ -165,7 +165,8 @@ object DiplomaticObjectModelAddressing {
     width: Int,
     depth: BigInt,
     granWidth: Int,
-    uid: Int
+    uid: Int,
+    rtlModule: OMRTLModule = OMRTLModule()
   ): OMSRAM = {
     OMSRAM(
       description = desc,
@@ -173,7 +174,8 @@ object DiplomaticObjectModelAddressing {
       dataWidth = width,
       depth = depth,
       writeMaskGranularity = granWidth,
-      uid = uid
+      uid = uid,
+      rtlModule = rtlModule
     )
   }
 
