@@ -3,7 +3,7 @@
 package freechips.rocketchip.tilelink
 
 import Chisel._
-import freechips.rocketchip.config._
+import chipsalliance.rocketchip.config._
 import freechips.rocketchip.diplomacy._
 
 // Trades off slave port proximity against routing resource cost

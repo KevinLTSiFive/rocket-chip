@@ -16,6 +16,16 @@ global def rocketchipScalaModule =
     hardfloatScalaModule,
     hardfloatScalaModule,
     apiConfigChipsallianceScalaModule,
+    apiUtilChipsallianceScalaModule,
+    apiUnittestChipsallianceScalaModule,
+    apiDiplomacyChipsallianceScalaModule,
+    libraryRegisterrouterChipsallianceScalaModule,
+    libraryTilelinkAdaptersChipsallianceScalaModule,
+    libraryInterruptChipsallianceScalaModule,
+    libraryAMBAChipsallianceScalaModule,
+    libraryTilelinkAMBAAdaptersChipsallianceScalaModule,
+    libraryBroadcasthubChipsallianceScalaModule,
+    ##apiUnittestChipsallianceScalaModule,
     Nil
   makeScalaModuleFromJSON here "rocketchip"
   | setScalaModuleRootDir "rocket-chip"
@@ -146,3 +156,12 @@ global def runRocketChipGenerator options =
   def omFile      = getFileOpt `.*\.objectModel\.json`
 
   RocketChipGeneratorOutputs dtsFile firrtlFile annoFile romConfFile allOutputs options omFile
+
+
+global def baseDeps = 
+  chisel3ScalaModule,
+  rocketchipMacros,
+  apiConfigChipsallianceScalaModule,
+  apiDiplomacyChipsallianceScalaModule,
+  apiUtilChipsallianceScalaModule,
+  Nil

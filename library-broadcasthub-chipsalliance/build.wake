@@ -1,0 +1,14 @@
+
+def localDeps =
+  libraryTilelinkAdaptersChipsallianceScalaModule,
+  Nil
+
+def deps = baseDeps ++ localDeps
+
+global def libraryBroadcasthubChipsallianceScalaModule =
+  def version = makeScalaVersion 12 8
+  def root = here
+  def name = "library-broadcasthub-chipsalliance"
+  makeScalaModule name here version
+  | setScalaModuleDeps deps
+  | setScalaModuleScalacOptions ("-Xsource:2.11", Nil)

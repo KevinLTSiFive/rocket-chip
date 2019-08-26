@@ -4,7 +4,7 @@ package freechips.rocketchip.tilelink
 
 import Chisel._
 import chisel3.internal.sourceinfo.SourceInfo
-import freechips.rocketchip.config.{Field, Parameters}
+import chipsalliance.rocketchip.config.{Field, Parameters}
 import freechips.rocketchip.diplomacy._
 import freechips.rocketchip.util.{AsyncQueueParams,RationalDirection}
 import scala.collection.mutable.ListBuffer

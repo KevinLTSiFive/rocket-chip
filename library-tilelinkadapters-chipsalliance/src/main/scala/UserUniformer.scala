@@ -2,7 +2,7 @@
 package freechips.rocketchip.tilelink
 
 import chisel3._
-import freechips.rocketchip.config.Parameters
+import chipsalliance.rocketchip.config.Parameters
 import freechips.rocketchip.diplomacy._
 import scala.reflect.ClassTag
 

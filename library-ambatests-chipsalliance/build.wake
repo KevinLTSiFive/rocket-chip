@@ -1,0 +1,18 @@
+
+def moduleDeps = 
+  libraryTilelinkAdaptersChipsallianceScalaModule,
+  libraryAMBAChipsallianceScalaModule,
+  rocketchipScalaModule,
+  apiUnittestChipsallianceScalaModule,
+  libraryTilelinkAMBAAdaptersChipsallianceScalaModule,
+  Nil
+
+def deps = baseDeps ++ moduleDeps
+
+global def libraryAMBATestsChipsallianceScalaModule =
+  def version = makeScalaVersion 12 8
+  def root = here
+  def name = "library-ambatests-chipsalliance"
+  makeScalaModule name here version
+  | setScalaModuleDeps deps
+  | setScalaModuleScalacOptions ("-Xsource:2.11", Nil)

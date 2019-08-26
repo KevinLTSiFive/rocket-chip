@@ -1,0 +1,14 @@
+
+def moduleDeps = 
+  libraryRegisterrouterChipsallianceScalaModule,
+  Nil
+
+def deps = baseDeps ++ moduleDeps
+
+global def libraryInterruptChipsallianceScalaModule =
+  def version = makeScalaVersion 12 8
+  def root = here
+  def name = "library-interrupt-chipsalliance"
+  makeScalaModule name here version
+  | setScalaModuleDeps deps
+  | setScalaModuleScalacOptions ("-Xsource:2.11", Nil)

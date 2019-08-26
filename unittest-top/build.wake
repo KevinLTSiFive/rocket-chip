@@ -6,6 +6,9 @@ def deps =
   rocketchipScalaModule,
   apiUtilUnittestChipsallianceScalaModule,
   libraryTilelinkAdaptersUnittestChipsallianceScalaModule,
+  apiUnittestChipsallianceScalaModule,
+  libraryAMBATestsChipsallianceScalaModule,
+  libraryAMBAChipsallianceScalaModule,
   Nil
 
 global def unittestTopScalaModule =

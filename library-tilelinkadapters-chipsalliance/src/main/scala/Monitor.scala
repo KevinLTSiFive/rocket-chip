@@ -4,7 +4,7 @@ package freechips.rocketchip.tilelink
 
 import Chisel._
 import chisel3.internal.sourceinfo.{SourceInfo, SourceLine}
-import freechips.rocketchip.config.Parameters
+import chipsalliance.rocketchip.config.Parameters
 import freechips.rocketchip.diplomacy._
 import freechips.rocketchip.util.{HeterogeneousBag, PlusArg}
 

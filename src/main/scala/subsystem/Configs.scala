@@ -11,7 +11,6 @@ import freechips.rocketchip.diplomacy._
 import freechips.rocketchip.rocket._
 import freechips.rocketchip.tile._
 import freechips.rocketchip.tilelink._
-import freechips.rocketchip.util._
 
 class BaseSubsystemConfig extends Config ((site, here, up) => {
   // Tile parameters

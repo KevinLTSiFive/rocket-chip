@@ -9,3 +9,19 @@ global def makeTopScalaModules _ =
 
 
 # wake -v 'makeTopScalaModules 0'
+
+
+#global def exampleRocketchipDUTPlan = 
+# def name = "exampleSOCRocketchipDUTPlan"
+# def testharness = "freechips.rocketchip.system.TestHarness"
+# def configs = 
+#   "freechips.rocketchip.system.DefaultConfig",
+#   Nil
+# makeRocketChipDUTPlan name rocketchipScalaModule testharness ""
+# | setRocketChipDUTPlanConfigs configs
+#
+#global def makeVerilog _ = 
+# def dutPlan = exampleRocketchipDUTPlan
+# makeRTL dutPlan
+
+# wake -v 'makeVerilog 0'

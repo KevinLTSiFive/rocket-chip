@@ -4,7 +4,7 @@ package freechips.rocketchip.diplomacy
 
 import Chisel._
 import chisel3.internal.sourceinfo.SourceInfo
-import freechips.rocketchip.config.{Parameters,Field}
+import chipsalliance.rocketchip.config.{Parameters,Field}
 import freechips.rocketchip.util.HeterogeneousBag
 import scala.collection.mutable.ListBuffer
 import scala.util.matching._

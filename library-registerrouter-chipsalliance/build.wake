@@ -1,0 +1,9 @@
+
+
+global def libraryRegisterrouterChipsallianceScalaModule =
+  def version = makeScalaVersion 12 8
+  def root = here
+  def name = "library-registerrouter-chipsalliance"
+  makeScalaModule name here version
+  | setScalaModuleDeps baseDeps
+  | setScalaModuleScalacOptions ("-Xsource:2.11", Nil)
