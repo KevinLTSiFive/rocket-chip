@@ -4,7 +4,7 @@ package freechips.rocketchip.amba.apb
 
 import chisel3._
 import chisel3.core.Reset
-import freechips.rocketchip.config.Parameters
+
 
 case class APBMonitorArgs(edge: APBEdgeParameters)
 

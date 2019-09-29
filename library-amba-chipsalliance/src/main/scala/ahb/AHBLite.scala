@@ -3,9 +3,9 @@
 package freechips.rocketchip.amba.ahb
 
 import Chisel._
-import freechips.rocketchip.config.Parameters
+import chipsalliance.rocketchip.config.Parameters
 import freechips.rocketchip.diplomacy._
-import freechips.rocketchip.tilelink._
+
 
 class AHBLite()(implicit p: Parameters) extends LazyModule {
   val node = AHBMasterAdapterNode(
